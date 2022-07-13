@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courgette', cursive;
+    font-size: large;
+    width: 40%;
+    margin-left: 30%;
+}
+
+h1:first-child {
+    font-size: 50px;
+    text-shadow: 5px 5px 5px #CCC;
+    text-align: center;
+}
+
+img {
+    width: 500px;
+    margin: auto;
+    
+    box-shadow: 5px 5px 10px gray;
+}
+
+
+p:last-child {
+    grid-column: 1 / -1;
+}
+
+h3 {
+    border-top: 1px dashed #555;
+    padding-top: 20px;
+}
+
+img + h3 {
+    border-top: none;
+}
+
+h3, h5 {
+    text-shadow: 5px 5px 5px #DDD;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+
+
+a[href="../index.html"]{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px dashed black;
+    padding: 10px;
+    transition: all 0.3s;
+    border-radius: 2px;
+}
+
+a[href="../index.html"]:hover{
+    color: white;
+    background-color: #333;
+}
+
+p:last-child {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
