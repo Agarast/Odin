@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+
+:root{
+    --dark-color : #1F2937;
+    --emphasis : #3382F6;
+    --light-color : #F9FAF8;
+    --middle-color : #E5E7EB;
+}
+
+body {
+    height: 100%;
+    width: 60%;
+    margin: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+/** HEADER **/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width:80%;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+header .fake-img {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+/** MAIN **/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 5px 20px 5px 20px;
+    
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+    font-weight: bold;
+    
+    background-color: var(--emphasis);
+    color: var(--light-color);
+}
+
+
+/** FIRST **/
+
+section#first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width:80%;
+    padding: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+section#first .content {
+    width:45%;
+}
+
+section#first .content h1 {
+    margin:0;
+
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+section#first .content p {
+    color: var(--middle-color);
+}
+
+section#first .fake-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width:45%;
+
+    background-color: darkgray;
+}
+
+/** SECOND **/
+
+section#second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width:80%;
+    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+section#second .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+}
+
+section#second .content article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 120px;
+
+    text-align: center;
+}
+
+section#second .content .fake-img {
+    height: 120px;
+    width: 120px;
+
+    border: 3px solid var(--emphasis);
+    border-radius: 10px;
+}
+
+section#second .content .fake-img + span  {
+    width: 126px;
+    margin-top: 5px;
+
+    font-size: 0.8em;
+}
+
+/** THIRD **/
+
+section#third {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width:80%;
+    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    background-color: var(--middle-color);
+    color: var(--dark-color);
+}
+
+section#third figure {
+    width: 80%;
+}
+
+section#third blockquote {
+    margin: 0px;
+
+    font-size: 2em;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+section#third figcaption {
+    text-align: end;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+/** FOURTH **/ 
+
+section#fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width:80%;
+    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    background-color: var(--light-color);
+}
+
+section#fourth .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+    padding: 30px 60px 30px 60px;
+
+    border-radius: 6px;
+    background-color: var(--emphasis);
+    color: var(--light-color);
+}
+
+section#fourth .card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section#fourth .card .content h2 {
+    margin:0;
+    font-size: 1.1em;
+}
+
+section#fourth .card .content span {
+    font-size: 0.8em;
+    color: var(--middle-color)
+}
+
+section#fourth .card button {
+    border: 2px solid var(--light-color);
+}
+
+/** FOOTER **/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    
+    font-size: 0.8em;
+
+    background-color: var(--dark-color);
+    color: var(--light-color)
+}
+
